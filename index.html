@@ -9,141 +9,72 @@
 </head>
 <body class="bg-gray-200">
     <div class="flex flex-col h-screen justify-between">
-        <div class="flex justify-center items-center my-auto">
+        <!-- <div class="flex justify-center items-center my-auto hidden">
             <div class="flex flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
                 <div class="py-2 text-center text-3xl">
                     Still Under Construction :)
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div id="menu-section" class="flex justify-center hidden">
+        <div id="menu-section" class="flex justify-center">
             <div class="flex flex-col bg-white w-9/12 mt-5 rounded-md drop-shadow-md grid grid-cols-4 content-center">
-                <button id="btn-about-me" class="text-center hover:bg-gray-700 hover:text-white hover:rounded-l-md py-3 px-3 border-r-2 border-gray-200">About Me</button>
-                <button id="btn-education" class="text-center hover:bg-gray-700 hover:text-white py-3 px-3 border-r-2 border-gray-200">Education</button>
-                <button id="btn-work" class="text-center hover:bg-gray-700 hover:text-white py-3 px-3 border-r-2 border-gray-200">Work</button>
-                <button id="btn-others" class="text-center hover:bg-gray-700 hover:text-white hover:rounded-r-md py-3 px-3">Others</button>
+                <button id="btn-about-me" class="text-center bg-gray-700 text-white rounded-l-md hover:bg-gray-700 hover:text-white hover:rounded-l-md py-3 px-3 border-r-2 border-gray-200 btn-tab">About Me</button>
+                <button id="btn-education" class="text-center hover:bg-gray-700 hover:text-white py-3 px-3 border-r-2 border-gray-200 btn-tab">Education</button>
+                <button id="btn-work" class="text-center hover:bg-gray-700 hover:text-white py-3 px-3 border-r-2 border-gray-200 btn-tab">Work</button>
+                <button id="btn-others" class="text-center hover:bg-gray-700 hover:text-white hover:rounded-r-md py-3 px-3 btn-tab">Others</button>
             </div>
         </div>
     
-        <div id="details-section" class="flex flex-grow hidden">
-            <div id="about-me-tab" class="flex justify-center tab-section">
+        <div id="details-section" class="flex flex-grow">
+            <div id="about-me-tab" class="flex flex-grow justify-center tab-section">
+                <div class="bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
+                    <div class="text-3xl">Title</div>
+                </div>
+            </div>
+            <div id="education-tab" class="flex flex-grow justify-center hidden tab-section">
                 <div class="flex flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
-                    <div class="text-3xl w-100">Title</div>
-                    <div class="py-2">
-                        Content Example
-                    </div>
-                    <div class="py-2">  
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    <span class="text-3xl">Al-Binaa IBS <span class="text-xl">(High School)</span></span>
+                    <span class="text-xl">2012-2015</span>
+
+                    <hr class="my-4">
+
+                    <span class="text-3xl">Amikom University Yogyakarta <span class="text-xl">(Bachelor of Computer)</span></span>
+                    <span class="text-xl">2015-2019</span>
+                    <div class="mt-2">
+                        <ul>
+                            <li>• Graduated in April 2019 with cum laude honor (3.64 GPA).</li>
+                            <li>• Published a paper based on bachelor final project in Jurnal Informatika of Bina Sarana Informatika University (<a class="text-blue-500" href="">paper link</a>).</li>
+                            <li>• Specialized in machine learning and deep learning topics, specifically Natural Language Processing (NLP).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="education-tab" class="flex justify-center hidden tab-section">
+            <div id="work-tab" class="flex flex-grow justify-center hidden tab-section">
                 <div class="flex flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
-                    <div class="text-3xl w-100">Title</div>
-                    <div class="py-2">
-                        Content Example
-                    </div>
-                    <div class="py-2">  
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    <span class="text-3xl">Mohan Management Consultant Pte. Ltd. <span class="text-xl">(Singapore)</span></span>
+                    <span class="text-xl">2021-Now</span>
+                    <div class="mt-2">
+                        <ul>
+                            <li>• Graduated in April 2019 with cum laude honor (3.64 GPA).</li>
+                            <li>• Published a paper based on bachelor final project in Jurnal Informatika of Bina Sarana Informatika
+                                University (<a class="text-blue-500" href="">paper link</a>).</li>
+                            <li>• Specialized in machine learning and deep learning topics, specifically Natural Language Processing (NLP).
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="work-tab" class="flex justify-center hidden tab-section">
-                <div class="flex     flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
-                    <div class="text-3xl w-100">Title</div>
-                    <div class="py-2">
-                        Content Example
-                    </div>
-                    <div class="py-2">  
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                </div>
-            </div>
-            <div id="others-tab" class="flex justify-center hidden tab-section">
+            <div id="others-tab" class="flex flex-grow justify-center hidden tab-section">
                 <div class="flex flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-lg drop-shadow-md">
                     <div class="text-3xl w-100">Title</div>
-                    <div class="py-2">
-                        Content Example
-                    </div>
-                    <div class="py-2">  
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <div class="py-2">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
                 </div>
             </div>
         </div>
     
-        <div id="footer-section" class="flex justify-center hidden">
+        <div id="footer-section" class="flex justify-center">
             <div class="flex flex-col bg-white w-9/12 px-5 py-5 mt-5 rounded-t-md drop-shadow-md content-center">
-                <div class="text-center">Made using <a class="text-blue-500" target="_blank" href="https://github.com/tailwindlabs/tailwindcss">@tailwindcss</a> by <a class="text-blue-500" target="_blank" href="https://github.com/rangganast">@rangganast</a></div>
+                <div class="text-center">Made using <a class="text-blue-500" target="_blank" href="https://github.com/jquery/jquery">@jquery</a> & <a class="text-blue-500" target="_blank" href="https://github.com/tailwindlabs/tailwindcss">@tailwindcss</a> by <a class="text-blue-500" target="_blank" href="https://github.com/rangganast">@rangganast</a></div>
             </div>
         </div>
     </div>
